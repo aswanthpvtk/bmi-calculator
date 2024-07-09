@@ -1,0 +1,105 @@
+/* 
+    .nav{
+        width: 100%;
+        height: 50px;
+        background-color: yellow;
+    } */
+
+    * {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 400;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #hep {
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    #headding {
+        font-size: 30px;
+    }
+    
+    .navbaritem ul li {
+        display: inline;
+        /* Alternative: use flex properties */
+        text-decoration: none;
+        display: inline-flex;
+    }
+    
+    .box-Container {
+        border: solid 7px #f8f9fa;
+        width: 100%;
+        border-radius: 15px;
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+        border: 1px solid grey;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-top-width: 0px;
+    }
+    
+    /* .box-headding{
+    
+        } */
+    .gender {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    
+    .gender input {
+        margin-left: 30px;
+    }
+    
+    .weight {
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    .weight input {
+        margin-left: 10px;
+        height: 50px;
+    }
+    
+    .button-class input {
+        font-weight: bold;
+    }
+    
+    .button-class {
+        margin-left: 100px;
+    }
+    
+    .heading {
+        font-weight: bold
+    }
+    
+    nav ul {
+        list-style-type: none;
+        /* Remove bullets */
+        margin: 0;
+        /* Remove default margin */
+        padding: 0;
+        /* Remove default padding */
+        display: flex;
+        /* Make the list items inline */
+    }
+    
+    nav li {
+        margin-right: 20px;
+        /* Add space between the items */
+    }
+    
+    nav a {
+        text-decoration: none;
+        /* Remove underline from links */
+        color: green;
+        /* Set link color */
+        font-size: 20px;
+        /* Set font size */
+    }
+    
+    nav a:hover {
+        color: purple;
+        /* Change link color on hover */
+    }

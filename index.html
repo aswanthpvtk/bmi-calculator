@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="icon" href="hhttps://cdn2.iconfinder.com/data/icons/men-women-health-wildberry-vol-1/256/BMI_Calculator-512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+
+
+    
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a id="hep" class="navbar-brand" href="#">
+            <img src="https://cdn2.iconfinder.com/data/icons/men-women-health-wildberry-vol-1/256/BMI_Calculator-512.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+            <span id="headding" style="color:green"> BMI Calculator</span>
+
+            <ul>
+                <li><a href="#home">About</a></li>
+                <li><a href="#about">Fitness and Helth</a></li>
+                <li><a href="#services">Risk</a></li>
+            </ul> 
+          </a>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-6"></div>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+                
+                <div class="box-Container mt-5 pt-1" style="text-align: center ;">
+                    <form action="" class="bmiForm m-4">
+
+                       
+                        <h2 class="box-headding">BMI calculator</h2>
+
+
+                        <div class="gender mt-3 d-flex">
+                            <label for="">Gender : </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="male" >
+                            <i class="fa-solid fa-person"></i>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="female">
+                            <i class="fa-solid fa-person-dress"></i>
+                        </div>
+
+                        <div class="weight mt-4 d-flex">
+                            <label for="" class="mt-2">Weight(kg): </label>
+                            <input type="text" class="form-control" id="weight">
+                        </div>
+
+                        <div class="weight mt-4 d-flex">
+                            <label for="" class="mt-2">Height(cm): </label>
+                            <input type="text" class="form-control" id="height">
+                        </div>
+
+                        <div class="button-class m-5 justify-content-center align-item-center d-flex">
+                            <input type="button" value="RESET" class="btn btn-warning " onclick="clearFields()">
+                            <input type="button" value="CALCULATE" class="btn btn-success ms-5 " onclick="bmiCalculator()">
+                            
+
+                        </div>
+
+                        <div class="result1  mt-4  ">
+                            <h3 id="resultValue" class=" text-center"></h3>
+                            <p id="result"></p>
+                            <p id="weight-level" style="font-size: large;"></p>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6"></div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script>
+    function clearFields() {
+      weight.value = "";
+      height.value = "";
+      document.querySelectorAll('input[name="flexRadioDefault"]').forEach((radio) => {
+                radio.checked = false;
+            });
+            document.getElementById('result').textContent = "";
+            document.getElementById('weight-level').textContent = "";
+  
+    }
+  </script>
+  
+
+</html>
